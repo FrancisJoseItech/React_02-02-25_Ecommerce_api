@@ -36,9 +36,12 @@ function App() {
    },[])
 
   return (
-    <div className='container'>
-      <h1>Products</h1>
-      <div className='row g-2'>
+    <div className='container text-center'>
+      <div className='row'>
+        <h1 className='bg-primary text-white'>Fake Store</h1>
+      </div>
+      
+      <div className='row g-2 mt-2'>
 
         {/* //c-col-md-4 is used for limited number of cards as column */}
 
@@ -48,13 +51,12 @@ function App() {
           <div key={product.id} className='col-md-3'>
             {/* here we are passing the items of the array as props to the productCard */}
           < ProductCard item={product}/>
-          </div>
+          
+      </div>
         ))
       }
-
-        
-      
-      </div>
+          <h6 className='bg-dark text-white'>2024 Fake Store. All rights reserved</h6>
+          </div>
     
 
     </div>
